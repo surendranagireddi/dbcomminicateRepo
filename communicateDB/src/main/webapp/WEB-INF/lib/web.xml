@@ -1,0 +1,42 @@
+<web-app>
+
+<servlet>
+<servlet-name>db</servlet-name>
+<servlet-class>com.db.Dbsrv</servlet-class>
+ 
+ <init-param>
+   <param-name>driver</param-name>
+   <param-value>com.mysql.cj.jdbc.Driver</param-value>
+ </init-param>
+
+ <init-param>
+   <param-name>dburl</param-name>
+   <param-value>jdbc:mysql://localhost:3306/student</param-value>
+ </init-param>
+
+ <init-param>
+   <param-name>dbuser</param-name>
+   <param-value>root</param-value>
+ </init-param>
+
+ <init-param>
+   <param-name>dbpass</param-name>
+   <param-value>root</param-value>
+ </init-param>
+
+
+ 
+
+
+
+
+</servlet>
+<servlet-mapping>
+ <servlet-name>db</servlet-name>
+<url-pattern>/dburl</url-pattern>
+</servlet-mapping>
+<welcomefile-list>
+<welcomefile>input.html</welcomefile>
+</welcomefile-list>
+
+</web-app>
